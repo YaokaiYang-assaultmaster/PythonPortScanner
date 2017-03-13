@@ -208,7 +208,7 @@ class PortScanner:
         TCP_sock.settimeout(delay)
 
 
-        # Initilize a UDP socket to send scanning alart message
+        # Initilize a UDP socket to send scanning alert message
         if message != '':
             UDP_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             UDP_sock.sendto(str(message), (ip, int(port_number)))
