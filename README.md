@@ -26,4 +26,5 @@ A Python module that could perform port scanning conveniently.
 		- `delay` the time in seconds that a TCP socket waits until timeout. The valid delay range is 1s to 100s. The default value is 10s.   
 	4. `show_target_ports(self)` is used to print out the list of ports being scanned.   
 	5. `show_delay(self)` is used to print out the delay in seconds that a TCP socket waits until timeout.   
-	6. An example usage case is showed in `PortScanExample.py`
+
+- __An example usage case is showed in `PortScanExample.py`__
