@@ -29,4 +29,4 @@ A Python module that could perform port scanning conveniently.
 	4. `show_target_ports(self)` is used to print out the list of ports being scanned.   
 	5. `show_delay(self)` is used to print out the delay in seconds that a TCP socket waits until timeout.   
 
-- __An example usage case is showed in `PortScanExample.py`__
+- __An example usage case is showed in `PortScanner/PortScanExample.py`__
