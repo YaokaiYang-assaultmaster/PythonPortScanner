@@ -4,12 +4,14 @@ A Python module that could perform port scanning conveniently.
 
 ### Installation  
 1. Use `git clone https://github.com/YaokaiYang-assaultmaster/Python-Port-Scanner-Module` command to clone the repository to your own machine.   
-2. Put `PortScanner.py` in your working directory or in`/Users/YourName/Library/Python/2.7/lib/python/site-packages`   
+2. There is 2 methods for you to use this module.   
+	- One is to put `PortScanner.py` in your working directory. In this way you can only use it in your current working directory.  
+	- The other is to execute `python setup.py install` in the root directory of this module. In this way it will be installed to `/Users/USERNAME/Library/Python/SOMEVERSION/lib/python/site-packages`. And after that you can use it globally by `import PortScanner`.   
 3. You are ready to go!
 
 ### Usage  
-1. Add `import PortScanner` in your code.  
-2. Initilize a new PortScanner object using `scanner = PortScanner.PortScanner()`. You could also put the list of ports you want to scan as a `[]` and pass it as argument to the constructor.  
+1. Add `import PortScanner` or `from PortScanner import PortScanner`in your code.  
+2. Initilize a new PortScanner object using `scanner = PortScanner.PortScanner()` or `scanner = PortScanner()`. You could also put the list of ports you want to scan as a `list object` and pass it as an argument to the constructor.  
 3. Then call `scanner.scan(host_name)` to perform scan task. 
 
 ### Documentation 
