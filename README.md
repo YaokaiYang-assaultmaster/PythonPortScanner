@@ -10,7 +10,7 @@ A Python module that could perform port scanning conveniently.
 3. You are ready to go!
 
 ### Usage  
-1. Add `import PortScanner` or `from PortScanner import PortScanner`in your code.  
+1. Add `import PortScanner` or `from PortScanner import *`in your code.  
 2. Initilize a new PortScanner object using `scanner = PortScanner.PortScanner()` or `scanner = PortScanner()`. You could also put the list of ports you want to scan as a `list object` and pass it as an argument to the constructor.  
 3. Then call `scanner.scan(host_name)` to perform scan task. 
 
