@@ -77,7 +77,6 @@ class PortScanner:
 
         print('finish scanning!\n')
 
-        self.__scan_result = output
         return output
 
 
@@ -220,7 +219,7 @@ class PortScanner:
             if message != '':
                 TCP_sock.sendall(str(message))
             
-            # If the TCP handshake is successful, the port is 'OPEN'. Otherwise it is CLOSE
+            # If the TCP handshake is successful, the port is OPEN. Otherwise it is CLOSE
             if result == 0:
                 output[port_number] = 'OPEN'
             else:
