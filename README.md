@@ -1,9 +1,9 @@
 # Python Port Scanner v0.1
 
-An easy to use Python package that could perform port scanning conveniently
+An easy to use Python package that could perform port scanning conveniently.
 
-
-！[Output Example](https://github.com/YaokaiYang-assaultmaster/PythonPortScanner/blob/master/ExampleGraph/ScanResultExample.png
+An output example is showed as following:
+![Output Example](https://github.com/YaokaiYang-assaultmaster/PythonPortScanner/blob/master/ExampleGraph/ScanResultExample.png)
 
 ## Installation  
 1. Use `git clone https://github.com/YaokaiYang-assaultmaster/Python-Port-Scanner-Module` command to clone the repository to your own machine.   
