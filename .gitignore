@@ -2,3 +2,4 @@ PortScanner.egg-info
 build
 dist
 *.pyc
+.idea
