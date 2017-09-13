@@ -1,21 +1,22 @@
 import PortScanner as ps
 
-def main():
 
-    scanner = ps.PortScanner()
+def main():
+    # Initialize a Scanner object that will scan top 50 commonly used ports.
+    scanner = ps.PortScanner(target_ports=50)
 
     host_name = 'google.com'
 
     message = 'put whatever message you want here'
 
     '''
-    output contains a dictionary of [port:status] pairs
+    output contains a dictionary of {port:status} pairs
     in which port is the list of ports we scanned 
     and status is either 'OPEN' or 'CLOSE'
-    ''' 
+    '''
 
     # This line sets the thread limit of the scanner to 1500
-    scanner.set_thread_limit(1500)      
+    scanner.set_thread_limit(1500)
 
     # This line sets the timeout delay to 15s
     scanner.set_delay(15)
@@ -30,9 +31,15 @@ def main():
     # This line shows the timeout delay of the scanner
     scanner.show_delay()
     '''
-    Current timeout delay is :15
+    Current timeout delay is 15 seconds.
     '''
 
+    # This line shows the top 100 commonly used ports.
+    scanner.show_top_k_ports(100)
+    '''
+    Top 100 commonly used ports:
+    [blah, blah ....]
+    '''
 
     output = scanner.scan(host_name, message)
     '''
@@ -49,7 +56,6 @@ def main():
     host google.com scanned in  30.956103 seconds
     finish scanning!
     '''
-
 
 
 if __name__ == "__main__":
