@@ -34,3 +34,5 @@ An output example is showed as following:
 	6. `scanner.show_top_k_ports(k)` is used to get top 50, top 100 or top 1000 port lists. Other k will raise an `ValueError` 
 
 - __An example usage case is showed in `PortScanner/PortScanExample.py`__
+
+## Change logs can be found [here](https://github.com/YaokaiYang-assaultmaster/PythonPortScanner/blob/master/CHANGELOG.md)
