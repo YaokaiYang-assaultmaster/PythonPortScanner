@@ -16,7 +16,7 @@ An output example is showed as following:
 1. Add `import PortScanner` or `from PortScanner import PortScanner`in your code.  
 2. Initialize a new PortScanner object using `scanner = PortScanner.PortScanner()` or `scanner = PortScanner()`. You could also put the list of ports you want to scan (if any) as a python `list` and pass it as the `target_ports` argument to the constructor.  
 3. Then call `scanner.scan(host_name)` to perform scan task. 
-4. __Note that the total scan time for a single is highly related to the timeout value (delay) set for the Scanner object. Thus for the seek of efficiency, the timeout should not be too long.__
+4. __Note that the total scan time for a target website is highly related to the timeout value (delay) set for the Scanner object. Thus for the seek of efficiency, the timeout should not be too long.__
 
 ## Documentation 
 - Constructor  
