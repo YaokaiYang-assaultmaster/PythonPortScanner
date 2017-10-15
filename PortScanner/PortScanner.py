@@ -204,6 +204,7 @@ class PortScanner:
                                           args=(ip, self.target_ports[port_index], delay, output, message))
                 thread.start()
                 port_index = port_index + 1
+            time.sleep(0.01)
 
     def __scan_ports(self, ip, delay, message):
         """
@@ -226,6 +227,7 @@ class PortScanner:
 
         # Wait until all ports being scanned
         while len(output) < len(self.target_ports):
+            time.sleep(0.01)
             continue
 
         # Print opening ports from small to large
