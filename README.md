@@ -1,5 +1,8 @@
 # Python Port Scanner v0.2
 
+__For python version >= 3.0, refer to my new project [pyPortScanner](https://github.com/YaokaiYang-assaultmaster/py3PortScanner) 
+for a more efficient and elegant implementation that also give you more flexibility in choosing ports to be scanned!__
+
 An easy to use Python package that could perform port scanning conveniently.
 
 An output example is showed as following:
